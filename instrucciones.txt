@@ -1,0 +1,46 @@
+python3 -m venv venv
+ls
+source venv/bin/activate
+
+------------------------------------
+install venv
+---------------------- Esto paso en la local
+virtualenv venv
+
+source venv/bin/activate
+
+pip install fastapi uvicorn
+
+pip install fastapi uvicorn
+
+uvicorn  main:app --port 5000 --reload
+uvicorn  main:app --reload
+
+
+-------------------------------
+Para desplieque en amazon web services
+crear .gitignore
+venv/
+__pycache__/
+
+----
+hacer el requirements.txt
+pip freeze > .\requirements.txt
+-----
+Crear repositorio en git
+
+
+echo "# app_fastAPI" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Israe1HV/app_fastAPI.git
+git push -u origin main
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Israe1HV/app_fastAPI.gi
+git push -u origin main
